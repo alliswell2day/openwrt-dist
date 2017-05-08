@@ -1,0 +1,344 @@
+Package: ChinaDNS
+Version: 1.3.2-4
+Depends: libc
+Source: package/chinadns
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: imx6
+Installed-Size: 24406
+Filename: ChinaDNS_1.3.2-4_imx6.ipk
+Size: 24683
+MD5Sum: 9ced000f2bedc791a1e25c43e4e98402
+SHA256sum: 73fc74e3a157cd0b03a7683ad2d6e83b62924b9b23d9118e98e31f9dff556b23
+Description:  Protect yourself against DNS poisoning in China.
+
+Package: autossh
+Version: 1.4e-1
+Depends: libc
+Source: package/autossh
+Section: net
+Architecture: imx6
+Installed-Size: 10130
+Filename: autossh_1.4e-1_imx6.ipk
+Size: 10949
+MD5Sum: e623ebb6b4db6d549f595bf913483e62
+SHA256sum: 6e4e244af70d96c54dc68dcc4c8a124404ddd352f43ecb38669bd90c2325b21a
+Description:  Autossh client
+
+Package: dns-forwarder
+Version: 1.2.0-1
+Depends: libc
+Source: package/dns-forwarder
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: imx6
+Installed-Size: 7702
+Filename: dns-forwarder_1.2.0-1_imx6.ipk
+Size: 8493
+MD5Sum: 6bd8a5252bd40505f09b25ecdda83e02
+SHA256sum: b3727b308d1606e336d2bffd741fa5d358013429178e120188c8f3a694008dbb
+Description:  Forwarding DNS queries on TCP transport.
+
+Package: libmbedtls
+Version: 2.4.2-1
+Depends: libc
+Source: package/feeds/base/mbedtls
+License: GPL-2.0+
+Section: libs
+Architecture: imx6
+Installed-Size: 141511
+Filename: libmbedtls_2.4.2-1_imx6.ipk
+Size: 142241
+MD5Sum: 0525e52ce8deaf5ee9800cdf41ec4ba9
+SHA256sum: 80c9804d76ff06adccce8690ddcc2de897ebf0db072b8aa0a1a499aeb1e219f6
+Description:  The aim of the mbedtls project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the mbedtls library.
+
+Package: libudns
+Version: 0.4-1
+Depends: libc
+Source: package/feeds/base/libudns
+Section: net
+Architecture: imx6
+Installed-Size: 17268
+Filename: libudns_0.4-1_imx6.ipk
+Size: 18008
+MD5Sum: 3af0b48c006bd6f0208cef724e287764
+SHA256sum: 19d5fa17bca5ab7b68c02adf16648b45f7fe1dc5b6afa98ed61e48b976c63994
+Description:  The DNS library, udns, implements thread-safe stub DNS resolver functionality, which may be used both traditional, syncronous way and asyncronously, with application-supplied event loop.
+
+Package: luci-app-chinadns
+Version: 1.6.1-1
+Depends: libc, ChinaDNS
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 1604
+Filename: luci-app-chinadns_1.6.1-1_all.ipk
+Size: 2508
+MD5Sum: ddfa2c85e2fc4abbfa007627d5f35c8b
+SHA256sum: 9544664861e71900d95ea8621bf6593b26a39af2fa56d0fdc6519a00ee6309b0
+Description:  LuCI Support for ChinaDNS.
+
+Package: luci-app-dns-forwarder
+Version: 1.6.1-1
+Depends: libc, dns-forwarder
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 1355
+Filename: luci-app-dns-forwarder_1.6.1-1_all.ipk
+Size: 2261
+MD5Sum: 7d0341ffd585bc687f30162691512b97
+SHA256sum: bc759199e6f6138a64bf0400ecfe67286f0c9464011fc2b92874ec243dfda225
+Description:  LuCI Support for Dns-Forwarder.
+
+Package: luci-app-pdnsd
+Version: 1.2-1
+Depends: libc, pdnsd
+Source: package/luci-app-pdnsd
+Section: opt
+Maintainer: Alex Zhuo <1886090@gmail.com>
+Architecture: all
+Installed-Size: 4010
+Filename: luci-app-pdnsd_1.2-1_all.ipk
+Size: 4758
+MD5Sum: 03b0593914c329a4fa33e2d2988a0f32
+SHA256sum: 1e64bd9db89a3f04d81ed34402bcea7331b7624ef3473b1c0da5fe9389fec475
+Description:  A luci app for pdnsd
+
+Package: luci-app-redsocks2
+Version: 1.6.1-1
+Depends: libc, redsocks2
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 1541
+Filename: luci-app-redsocks2_1.6.1-1_all.ipk
+Size: 2447
+MD5Sum: e49828a8662f770799b693d1a7399e88
+SHA256sum: ae89d5064c23400911ba323aecc6d77012efe80409fd1c635d7fccf8fa8c40f0
+Description:  LuCI Support for RedSocks2.
+
+Package: luci-app-shadowsocks-without-ipset
+Version: 1.6.3-2
+Depends: libc, iptables
+Source: package/luci-app-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 9282
+Filename: luci-app-shadowsocks-without-ipset_1.6.3-2_all.ipk
+Size: 10204
+MD5Sum: 2555a4777f3917bf0415ca0136061a8c
+SHA256sum: b145d587bda7360608b32262b8033fda206ee4e85dbad29f1884edba5e98bafd
+Description:  LuCI Support for shadowsocks-libev.
+
+Package: luci-app-shadowsocksR-GFW
+Version: 1.2.1
+Depends: libc, libopenssl, libpthread, ipset, ip, iptables-mod-tproxy, libpcre, zlib, dnsmasq-full, coreutils, coreutils-base64
+Source: package/openwrt-ssr
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: yushi studio <ywb94@qq.com>
+Architecture: all
+Installed-Size: 429760
+Filename: luci-app-shadowsocksR-GFW_1.2.1_all.ipk
+Size: 429154
+MD5Sum: 0a57e34e489b961870df9ea032e37bdf
+SHA256sum: 576a992f52491b09eeaa0e907ae4b9f8be751044f4dd47855b73c02d5b6c432f
+Description:  LuCI Support for shadowsocksr-libev GFW.
+
+Package: luci-app-shadowsocksR
+Version: 1.2.1
+Depends: libc, libopenssl, libpthread, ipset, ip, iptables-mod-tproxy, libpcre, zlib
+Source: package/openwrt-ssr
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: yushi studio <ywb94@qq.com>
+Architecture: all
+Installed-Size: 384941
+Filename: luci-app-shadowsocksR_1.2.1_all.ipk
+Size: 384714
+MD5Sum: 2fcdcf0f6d7b0c5881f163b396171309
+SHA256sum: f2b3d9f0f015b18734840efc4a8638ac8bfb9ebde30c8d22258841949f1c983c
+Description:  LuCI Support for shadowsocksr-libev Client and Server.
+
+Package: luci-app-shadowsocks
+Version: 1.6.3-2
+Depends: libc, iptables, ipset
+Source: package/luci-app-shadowsocks
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 9383
+Filename: luci-app-shadowsocks_1.6.3-2_all.ipk
+Size: 10305
+MD5Sum: d0ebfebae9b0e1ea5569d5e822dd85fc
+SHA256sum: 2c1568b8f7a6098e89c711e268a32eae52543da4bd86482307418461de8fa8f0
+Description:  LuCI Support for shadowsocks-libev.
+
+Package: luci-app-shadowvpn
+Version: 1.6.1-1
+Depends: libc, ShadowVPN
+Source: package/openwrt-dist-luci
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: all
+Installed-Size: 1815
+Filename: luci-app-shadowvpn_1.6.1-1_all.ipk
+Size: 2710
+MD5Sum: 6d8bdc135f44041985e491cf7028bb0e
+SHA256sum: d21f14dd63e0aa48887e03ae82632054090f90b2c64bfabebc5b84a03d687e70
+Description:  LuCI Support for ShadowVPN.
+
+Package: luci-app-vlmcsd
+Version: 1.0.1-1
+Depends: libc, vlmcsd
+Source: package/luci-app-vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: fuyumi
+Architecture: all
+Installed-Size: 1619
+Filename: luci-app-vlmcsd_1.0.1-1_all.ipk
+Size: 2476
+MD5Sum: 65297184aca09501e7d562816d771300
+SHA256sum: 4183639fd77876d58a87a8eba292e0fdec1999edc089084cdee61d22bba0e568
+Description:  This package contains LuCI configuration pages for openwrt-vlmcsd.
+
+Package: luci-theme-material
+Version: 0.2.18-1
+Depends: libc
+Source: package/luci-theme-material
+Section: luci
+Architecture: all
+Installed-Size: 50022
+Filename: luci-theme-material_0.2.18-1_all.ipk
+Size: 50910
+MD5Sum: 00e05680c86fa6b27c521bde7c10471a
+SHA256sum: 983221a4f8f116db5f2fa917962863a977c5697444f7a63827f511d5fd054091
+Description:  LuCI Theme - Material
+
+Package: pdnsd
+Version: 1.2.9a-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d
+Depends: libc, libpthread
+Source: package/pdnsd/pdnsd
+Section: net
+Architecture: imx6
+Installed-Size: 87027
+Filename: pdnsd_1.2.9a-par-a8e46ccba7b0fa2230d6c42ab6dcd92926f6c21d_imx6.ipk
+Size: 87840
+MD5Sum: 170696213d06f9113fd45c9726310bdb
+SHA256sum: a894bd53ced32e8fee9f951232c15e0f859e7567a8b117a491c7f6ce6b07f62f
+Description:  pdnsd, is an IPv6 capable proxy DNS server with permanent caching (the cache
+ contents are written to hard disk on exit) that is designed to cope with
+ unreachable or down DNS servers (for example in dial-in networking).
+ 
+ pdnsd can be used with applications that do dns lookups, eg on startup, and
+ can't be configured to change that behaviour, to prevent the often
+ minute-long hangs (or even crashes) that result from stalled dns queries.
+
+Package: shadowsocks-libev-server
+Version: 3.0.6-1
+Depends: libc, libev, libudns, libpcre, libpthread, libsodium, libmbedtls
+Source: package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: imx6
+Installed-Size: 63838
+Filename: shadowsocks-libev-server_3.0.6-1_imx6.ipk
+Size: 64655
+MD5Sum: a12294bf2c6fcc5c94f2ce8ccf8a9c13
+SHA256sum: e91c0ccae45b5a94808af6605d45a11316d792e9560cd020b21199f23ef579a2
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev
+Version: 3.0.6-1
+Depends: libc, libev, libudns, libpcre, libpthread, libsodium, libmbedtls
+Source: package/shadowsocks-libev
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: imx6
+Installed-Size: 143311
+Filename: shadowsocks-libev_3.0.6-1_imx6.ipk
+Size: 143874
+MD5Sum: 66206401fdd8528df1536d4b27903fb5
+SHA256sum: ca5903b421492e26887f8ead6a00a176cfcc168dc581bd3226a2901039afb719
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: simple-obfs-server
+Version: 0.0.3-1
+Depends: libc, libev, libudns, libpthread, libsodium
+Source: package/simple-obfs
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: imx6
+Installed-Size: 37515
+Filename: simple-obfs-server_0.0.3-1_imx6.ipk
+Size: 38280
+MD5Sum: 035fca9f210ee9d01c6d76849cd9e982
+SHA256sum: e1f1388543ae1c7cfd97c97cf36665865b9de5962b351c2f126eb7cfd52401c7
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: simple-obfs
+Version: 0.0.3-1
+Depends: libc, libev, libudns, libpthread, libsodium
+Source: package/simple-obfs
+License: GPLv3
+LicenseFiles: LICENSE
+Section: net
+Maintainer: Jian Chang <aa65535@live.com>
+Architecture: imx6
+Installed-Size: 24875
+Filename: simple-obfs_0.0.3-1_imx6.ipk
+Size: 25594
+MD5Sum: 4ad8e68eb70f5af1d5d9c5278fba1247
+SHA256sum: 03450c3adec7bfa377692f10504a3513b0eb4e8f7fe298a0f646d3d92a37fcde
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: vlmcsd
+Version: svn1107-1
+Depends: libc, libpthread
+Source: package/vlmcsd
+License: MIT
+LicenseFiles: LICENSE
+Section: net
+Maintainer: fuyumi <280604399@qq.com>
+Architecture: imx6
+Installed-Size: 51165
+Filename: vlmcsd_svn1107-1_imx6.ipk
+Size: 51337
+MD5Sum: 620db465c7c2e429d87717ed087a9e6d
+SHA256sum: a387b4f12bbeff4cbbcd72c8aba4c2492176567df48c26165e5432c7ec02e354
+Description:  vlmcsd is a KMS Emulator in C.
+

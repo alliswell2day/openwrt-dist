@@ -1,0 +1,52 @@
+Package: libev
+Version: 4.24-1
+Depends: libc
+Source: package/feeds/packages/libev
+License: BSD-2-Clause
+Section: libs
+Maintainer: Karl Palsson <karlp@tweak.net.au>
+Architecture: netlogic
+Installed-Size: 19322
+Filename: libev_4.24-1_netlogic.ipk
+Size: 20127
+MD5Sum: cb58062e5f722eb0f6b851f0cca0db76
+SHA256sum: 39106fd637fbc1a2e9352456ae6315914b3c5c8b5cc803f0709dc7851ec3c2a6
+Description:  A full-featured and high-performance event loop that is loosely modelled after
+ libevent, but without its limitations and bugs.
+
+Package: libpcre
+Version: 8.40-1
+Depends: libc
+Source: package/feeds/packages/pcre
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+Maintainer: Thomas Heil <heil@terminal-consulting.de>
+Architecture: netlogic
+Installed-Size: 86114
+Filename: libpcre_8.40-1_netlogic.ipk
+Size: 86686
+MD5Sum: 0b912a55da5d9edcfa7e8e3b021591b9
+SHA256sum: 1fe7566da20c98aae036e12ea550514dcdaec87fa81449668799547ea115419a
+Description:  A Perl Compatible Regular Expression library
+
+Package: libsodium
+Version: 1.0.12-1
+Depends: libc, libpthread
+Source: package/feeds/packages/libsodium
+License: ISC
+Section: libs
+Maintainer: Damiano Renfer <damiano.renfer@gmail.com>
+Architecture: netlogic
+Installed-Size: 89438
+Filename: libsodium_1.0.12-1_netlogic.ipk
+Size: 90673
+MD5Sum: e77e0810f9e0708649cd90cc8c8d5d5f
+SHA256sum: f6c64995004c2cdc699a07ee6634e87f0d456f11e13930b504576a23623c976f
+Description:  NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+ NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+ Sodium is a portable, cross-compilable, installable, packageable fork of NaCl (based on the latest released upstream version nacl-20110221), with a compatible API.
+ The design choices, particularly in regard to the Curve25519 Diffie-Hellman function, emphasize security (whereas NIST curves emphasize "performance" at the cost of security), and "magic constants" in NaCl/Sodium have clear rationales.
+ The same cannot be said of NIST curves, where the specific origins of certain constants are not described by the standards.
+ And despite the emphasis on higher security, primitives are faster across-the-board than most implementations of the NIST standards.
+
